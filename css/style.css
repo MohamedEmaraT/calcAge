@@ -1,0 +1,210 @@
+* {
+  font-family: Poppins;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0, 0%, 94%);
+}
+
+.container {
+  padding: 0 10px;
+  margin-inline: auto;
+}
+
+@media (max-width: 400px) {
+  .container {
+    max-width: 370px;
+  }
+}
+
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+header {
+  display: flex;
+  padding: 30px 0 40px 0;
+  column-gap: 25px;
+}
+
+#allContent {
+  width: 650px;
+  background-color: hsl(0, 0%, 100%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px 15px 150px 15px;
+  -webkit-border-radius: 15px 15px 150px 15px;
+  -moz-border-radius: 15px 15px 150px 15px;
+  -ms-border-radius: 15px 15px 150px 15px;
+  -o-border-radius: 15px 15px 150px 15px;
+}
+
+header .dayMonthYear {
+  color: #716f6f;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+}
+
+#validDay,
+#validMonth,
+#validYear {
+  font-size: 10px;
+  color: rgba(255, 0, 0, 0.802);
+  display: none;
+}
+
+header input {
+  width: 140px;
+  padding: 10px 4px 10px 10px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border: solid 0.2px #777;
+  outline: none;
+  margin-block: 6px 8px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+#thePad {
+  width: 80%;
+  margin-inline: auto;
+  padding-bottom: 30px;
+  position: relative;
+}
+
+.theWord {
+  font-size: 80px;
+  font-weight: 800;
+}
+
+.slash2 {
+  width: 40px;
+  height: 15px;
+  background-color: hsl(259, 100%, 65%);
+  margin: 0 10px;
+}
+
+.bigWord {
+  display: flex;
+  align-items: center;
+}
+
+hr {
+  margin-bottom: 15px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+#box22 {
+  position: relative;
+}
+
+#circle {
+  width: 70px;
+  height: 70px;
+  background-color: hsl(259, 100%, 65%);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: -15px;
+  top: -30px;
+  border: none;
+  cursor: pointer;
+}
+
+#circle:hover {
+  background-color: black;
+}
+
+#circle .midel {
+  height: 30px;
+  width: 2px;
+  background-color: hsl(0, 0%, 100%);
+  position: relative;
+}
+
+#circle .midel div:first-child {
+  height: 20px;
+  width: 2px;
+  background-color: hsl(0, 0%, 100%);
+  position: absolute;
+  transform-origin: bottom;
+  bottom: 0.9px;
+  rotate: 45deg;
+}
+
+#circle .midel div:last-child {
+  height: 20px;
+  width: 2px;
+  background-color: hsl(0, 0%, 100%);
+  position: absolute;
+  transform-origin: bottom;
+  bottom: 0.9px;
+  rotate: -45deg;
+}
+
+@media (max-width: 767px) {
+  #allContent {
+    width: 360px;
+  }
+  header input {
+    width: 75px;
+    font-size: 14px;
+    padding: 10px 4px 10px 10px;
+  }
+  .theWord {
+    font-size: 40px;
+  }
+  #circle {
+    right: -15px;
+    top: -31px;
+  }
+  .slash2 {
+    width: 30px;
+    height: 10px;
+  }
+}
+
+.yearss,
+.monthss,
+.dayss {
+  color: hsl(259, 100%, 65%);
+  font-size: 80px;
+  font-weight: 800;
+  margin-right: 10px;
+}
